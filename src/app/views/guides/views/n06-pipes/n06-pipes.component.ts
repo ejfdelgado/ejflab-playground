@@ -15,6 +15,6 @@ export class N06PipesComponent extends MenuItemClass implements OnInit {
     super();
   }
   async ngOnInit(): Promise<void> {
-    this.model.text = await this.translateSrv.translate("say_bye", ["test"])
+    this.model.text = await this.translateSrv.translate('say_bye', ['test']);
   }
 }

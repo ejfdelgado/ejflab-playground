@@ -1,4 +1,14 @@
 {
   "say_hi": "Hola",
-  "say_bye": "Chao"
+  "say_bye": "Chao",
+  "popups": {
+    "custom": {
+      "yes_word": "Sí",
+      "title": "Este es mi título"
+    },
+    "exit": {
+      "yes_word": "Sí",
+      "title": "Te veo pronto"
+    }
+  }
 }
