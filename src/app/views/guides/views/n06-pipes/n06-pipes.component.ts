@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { MenuItemClass } from '../../models/menu';
+import { TranslateService } from 'ejflab-front-lib';
 
 @Component({
   selector: 'app-n06-pipes',
@@ -10,7 +11,10 @@ export class N06PipesComponent extends MenuItemClass implements OnInit {
   model: any = {
     epoch: new Date().getTime(),
   };
-  ngOnInit(): void {
-    //
+  constructor(private translateSrv: TranslateService) {
+    super();
+  }
+  async ngOnInit(): Promise<void> {
+    this.model.text = await this.translateSrv.translate("say_bye", ["test"])
   }
 }
