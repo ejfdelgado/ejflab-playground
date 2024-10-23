@@ -2,13 +2,17 @@
   "say_hi": "Hola",
   "say_bye": "Chao",
   "popups": {
-    "custom": {
+    "choices": {
       "yes_word": "Sí",
-      "title": "Este es mi título"
+      "no_word": "No"
+    },
+    "custom": {
+      "title": "Este es mi título",
+      "text": "Este es mi texto"
     },
     "exit": {
-      "yes_word": "Sí",
-      "title": "Te veo pronto"
+      "title": "Te veo pronto",
+      "text": "Desearía yo"
     }
   }
 }

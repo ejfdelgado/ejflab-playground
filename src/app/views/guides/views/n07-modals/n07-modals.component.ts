@@ -12,7 +12,10 @@ export class N07ModalsComponent extends MenuItemClass {
     confirm: null,
     generic: null,
   };
-  constructor(private modalSrv: ModalService, private translateSrv: TranslateService) {
+  constructor(
+    private modalSrv: ModalService,
+    private translateSrv: TranslateService
+  ) {
     super();
   }
 
@@ -32,15 +35,13 @@ export class N07ModalsComponent extends MenuItemClass {
   async openCustom() {
     console.log(`The system open the pop up`);
 
-    const yesTranslated = await this.translateSrv.translate('popups.custom.yes_word', ['test']);
-    const popupTitle = await this.translateSrv.translate('popups.custom.title', ['test']);
-
     const modalResponse: any = await this.modalSrv.generic({
+      translateFolder: 'test',
       title: 'popups.custom.title',
-      txt: 'Your description',
+      txt: 'popups.custom.text',
       choices: [
-        { txt: yesTranslated, val: '1' },
-        { txt: 'No', val: '2' },
+        { txt: 'popups.choices.yes_word', val: '1' },
+        { txt: 'popups.choices.no_word', val: '2' },
       ],
     });
     this.model.generic = modalResponse?.choice;

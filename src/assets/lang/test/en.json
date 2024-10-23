@@ -2,13 +2,17 @@
   "say_hi": "Hello",
   "say_bye": "Bye",
   "popups": {
-    "custom": {
+    "choices": {
       "yes_word": "Yes",
-      "title": "This is my title"
+      "no_word": "Not"
+    },
+    "custom": {
+      "title": "This is my title",
+      "text": "This is my text"
     },
     "exit": {
-      "yes_word": "Yes",
-      "title": "See you soon"
+      "title": "See you soon",
+      "text": "I would like"
     }
   }
 }
