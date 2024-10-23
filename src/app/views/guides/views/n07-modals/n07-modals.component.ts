@@ -31,14 +31,14 @@ export class N07ModalsComponent extends MenuItemClass {
 
   async openCustom() {
     console.log(`The system open the pop up`);
-    this.model.confirm = await this.modalSrv.generic({
+    this.model.generic = await this.modalSrv.generic({
       txt: 'Your title',
       title: 'Your description',
       choices: [
-        { txt: 'Yes', val: 'yes' },
-        { txt: 'No', val: 'no' },
+        { txt: 'Yes', val: '1' },
+        { txt: 'No', val: '2' },
       ],
     });
-    console.log(`The user choose ${this.model.confirm}`);
+    console.log(`The user choose ${this.model.generic}`);
   }
 }
