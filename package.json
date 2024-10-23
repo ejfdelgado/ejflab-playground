@@ -30,7 +30,7 @@
   "license": "ISC",
   "private": true,
   "dependencies": {
-    "@ejfdelgado/ejflab-back": "^1.6.4",
+    "@ejfdelgado/ejflab-back": "^1.6.5",
     "@ejfdelgado/ejflab-common": "^1.5.4",
     "@google-cloud/compute": "^4.7.0",
     "@google-cloud/firestore": "^7.9.0",
