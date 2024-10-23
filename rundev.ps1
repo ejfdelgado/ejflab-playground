@@ -11,9 +11,9 @@ $env:MONGO_USR="user"
 $env:MONGO_PASS="pass"
 $env:MINIO_ACCESS_KEY="G3Ms1HAFz9Y5bXVInUyg"
 $env:MINIO_SECRET_KEY="Ji0MkkQcQiip1apqJKiodnB03pnLL869aXnsqkiY"
-$env:WORKSPACE="D:/desarrollo/widesight-core"
+$env:WORKSPACE="D:/desarrollo/ejflab-playground"
 $env:FACE_SERVER="http://localhost:8082/"
-$env:GOOGLE_APPLICATION_CREDENTIALS="D:/desarrollo/widesight-core/credentials/ejfexperiments-c2ef2a890ca5.json"
+$env:GOOGLE_APPLICATION_CREDENTIALS="D:/desarrollo/ejflab-playground/credentials/ejfexperiments-c2ef2a890ca5.json"
 $env:TRAIN_SERVER="https://imagiation-7b6hvjg6ia-uc.a.run.app/"
 
 npm run start
