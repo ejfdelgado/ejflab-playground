@@ -31,7 +31,7 @@ export class N07ModalsComponent extends MenuItemClass {
 
   async openCustom() {
     console.log(`The system open the pop up`);
-    this.model.generic = await this.modalSrv.generic({
+    const modalResponse: any = await this.modalSrv.generic({
       txt: 'Your title',
       title: 'Your description',
       choices: [
@@ -39,6 +39,7 @@ export class N07ModalsComponent extends MenuItemClass {
         { txt: 'No', val: '2' },
       ],
     });
+    this.model.generic = modalResponse.choice;
     console.log(`The user choose ${this.model.generic}`);
   }
 }
