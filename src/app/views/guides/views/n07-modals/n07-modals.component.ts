@@ -39,7 +39,7 @@ export class N07ModalsComponent extends MenuItemClass {
         { txt: 'No', val: '2' },
       ],
     });
-    this.model.generic = modalResponse.choice;
+    this.model.generic = modalResponse?.choice;
     console.log(`The user choose ${this.model.generic}`);
   }
 }
