@@ -1,0 +1,20 @@
+<div class="pagina">
+    <div class="header" style="background-image: url('/assets/img/background.jpg')">
+        <app-statusbar></app-statusbar>
+        <div class="top_items">
+            <div class="wrapper">
+                <app-card *ngFor="let oneCard of topCards; index as i;" [data]="oneCard"></app-card>
+            </div>
+        </div>
+    </div>
+
+    <div class="header">
+        <div class="top_items">
+            <div class="wrapper">
+                <app-card *ngFor="let oneCard of secondCards; index as i;" [data]="oneCard"></app-card>
+            </div>
+
+        </div>
+    </div>
+    <div class="footer"></div>
+</div>
