@@ -6,6 +6,7 @@ import {
   redirectUnauthorizedTo,
 } from '@angular/fire/auth-guard';
 import { HomeModule } from './views/home/home.module';
+import { GuidesModule } from './views/guides/guides.module';
 
 const redirectUnauthorizedToLogin = () => redirectUnauthorizedTo(['']);
 const redirectLoggedInToHome = () => redirectLoggedInTo(['customers']);
@@ -14,6 +15,10 @@ const routes: Routes = [
   {
     path: '',
     loadChildren: () => HomeModule,
+  },
+  {
+    path: 'guides',
+    loadChildren: () => GuidesModule,
   },
 ];
 

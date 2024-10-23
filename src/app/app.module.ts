@@ -27,6 +27,7 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatIconModule } from '@angular/material/icon';
 import { FormsModule } from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { GuidesModule } from './views/guides/guides.module';
 
 @NgModule({
   declarations: [AppComponent],
@@ -45,6 +46,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     MatToolbarModule,
     MatIconModule,
     MycommonModule,
+    GuidesModule,
   ],
   providers: [
     ScreenTrackingService,

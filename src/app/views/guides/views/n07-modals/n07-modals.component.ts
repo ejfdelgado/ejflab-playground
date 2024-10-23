@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
-import { ModalService } from 'ejflab-front-lib';
 import { MenuItemClass } from '../../models/menu';
+import { ModalService } from 'ejflab-front-lib';
 
 @Component({
   selector: 'app-n07-modals',
@@ -10,6 +10,7 @@ import { MenuItemClass } from '../../models/menu';
 export class N07ModalsComponent extends MenuItemClass {
   model: any = {
     confirm: null,
+    generic: null,
   };
   constructor(private modalSrv: ModalService) {
     super();
@@ -24,6 +25,19 @@ export class N07ModalsComponent extends MenuItemClass {
     this.model.confirm = await this.modalSrv.confirm({
       txt: 'Sure?',
       title: 'Confirm title',
+    });
+    console.log(`The user choose ${this.model.confirm}`);
+  }
+
+  async openCustom() {
+    console.log(`The system open the pop up`);
+    this.model.confirm = await this.modalSrv.generic({
+      txt: 'Your title',
+      title: 'Your description',
+      choices: [
+        { txt: 'Yes', val: 'yes' },
+        { txt: 'No', val: 'no' },
+      ],
     });
     console.log(`The user choose ${this.model.confirm}`);
   }
