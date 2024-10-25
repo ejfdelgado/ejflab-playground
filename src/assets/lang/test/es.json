@@ -17,7 +17,7 @@
     },
     "alert": {
       "title": "Alerta!",
-      "text": "Los cambios no se pueden deshacer"
+      "text": "Los cambios no se pueden deshacer para ${name}"
     }
   }
 }

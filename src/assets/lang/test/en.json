@@ -17,7 +17,7 @@
     },
     "alert": {
       "title": "Alert!",
-      "text": "Changes can't be undone"
+      "text": "Changes can't be undone by ${name}"
     }
   }
 }

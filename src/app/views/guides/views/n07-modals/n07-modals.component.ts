@@ -20,7 +20,6 @@ export class N07ModalsComponent extends MenuItemClass {
   }
 
   async openConfirm() {
-    console.log(`The system open the pop up`);
     const popUpParameter = {
       translateFolder: 'test',
       title: 'popups.custom.title',
@@ -32,16 +31,32 @@ export class N07ModalsComponent extends MenuItemClass {
     };
     const modalResponse: any = await this.modalSrv.generic(popUpParameter);
     this.model.generic = modalResponse?.choice;
-    console.log(`The user choose ${this.model.generic}`);
   }
 
   async openAlert() {
     const popUpParameter = {
       translateFolder: 'test',
-      title: 'popups.alert.title',
+      model: {
+        name: "Pinky",
+      },
+      title: 'This title does not exists...',
       txt: 'popups.alert.text',
       choices: [
         { txt: 'popups.choices.ok', val: '1' },
+      ],
+    };
+    await this.modalSrv.generic(popUpParameter);
+  }
+
+  async openConfirmWithModel() {
+    const popUpParameter = {
+      model: {
+        name: "Pinky",
+      },
+      title: 'Title for ${name}',
+      txt: 'This is the ${name} text',
+      choices: [
+        { txt: 'Ok ${name}', val: 'ok' }
       ],
     };
     await this.modalSrv.generic(popUpParameter);
