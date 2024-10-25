@@ -4,15 +4,20 @@
   "popups": {
     "choices": {
       "yes_word": "Yes",
-      "no_word": "Not"
+      "no_word": "Not",
+      "ok": "Ok"
     },
     "custom": {
-      "title": "This is my title",
-      "text": "This is my text"
+      "title": "Select the person",
+      "text": "Choose one of tjhe followings buttons:"
     },
     "exit": {
       "title": "See you soon",
       "text": "I would like"
+    },
+    "alert": {
+      "title": "Alert!",
+      "text": "Changes can't be undone"
     }
   }
 }

@@ -4,7 +4,8 @@
   "popups": {
     "choices": {
       "yes_word": "Sí",
-      "no_word": "No"
+      "no_word": "No",
+      "ok": "Entendido"
     },
     "custom": {
       "title": "Este es mi título",
@@ -13,6 +14,10 @@
     "exit": {
       "title": "Te veo pronto",
       "text": "Desearía yo"
+    },
+    "alert": {
+      "title": "Alerta!",
+      "text": "Los cambios no se pueden deshacer"
     }
   }
 }
