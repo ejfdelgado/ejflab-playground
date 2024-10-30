@@ -1,0 +1,76 @@
+.abuelo {
+    background-color: bisque;
+    height: 500px;
+}
+
+.hijo2 {
+    background-color: red;
+    flex: 1;
+}
+
+.cajon_simple {
+    display: flex;
+}
+
+.cajon_horizontal {
+    flex-direction: row;
+}
+
+.cajon_vertical {
+    flex-direction: column;
+}
+
+.hijo_que_crece {
+    flex: 1;
+}
+
+.cuadrado {
+    width: 60px;
+    height: 60px;
+    background-color: white;
+    text-align: center;
+}
+
+.cuadrado.actividad {
+    background-color: aqua;
+    text-decoration: underline;
+}
+
+.hijo1 {
+    background-color: chartreuse;
+    height: 60px;
+}
+
+.menu_izquierda {
+    width: 60px;
+    background-color: aliceblue;
+    text-align: center;
+}
+
+.gap_10 {
+    gap: 10px;
+}
+
+.espaciado {
+    line-height: 3em;
+    font-size: 1.5em;
+    color: #ffd4d4;
+    font-family: monospace;
+}
+
+.numero_indice {
+    min-width: 60px;
+    display: inline-block;
+}
+
+.cajon_textos {
+    display: block;
+}
+
+.emoji {
+    background-color: rgb(0, 0, 0);
+}
+
+.cuadrado.actividad .emoji {
+    background-color: red;
+}
