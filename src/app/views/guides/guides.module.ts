@@ -14,6 +14,8 @@ import { N06PipesComponent } from './views/n06-pipes/n06-pipes.component';
 import { N07ModalsComponent } from './views/n07-modals/n07-modals.component';
 import { N08ActivityComponent } from './views/n08-activity/n08-activity.component';
 import { MycommonModule } from 'ejflab-front-lib';
+import { N09StylesComponent } from './views/n09-styles/n09-styles.component';
+import { N10StylesSelectorComponent } from './views/n10-styles-selector/n10-styles-selector.component';
 
 @NgModule({
   declarations: [
@@ -27,6 +29,8 @@ import { MycommonModule } from 'ejflab-front-lib';
     N06PipesComponent,
     N07ModalsComponent,
     N08ActivityComponent,
+    N09StylesComponent,
+    N10StylesSelectorComponent,
   ],
   imports: [
     CommonModule,

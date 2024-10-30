@@ -16,13 +16,13 @@ ng generate module views/assessment --route assessment --module app.module
 ## Add new view
 
 ```
-ng generate component views/assessment/views/my-view --standalone false --skip-tests
+ng generate component views/guides/views/n09-styles --standalone false --skip-tests
 ```
 
 ## Add new component
 
 ```
-ng generate component views/assessment/components/my-component --standalone false  --skip-tests
+ng generate component views/guides/components/my-component --standalone false  --skip-tests
 ```
 
 ```

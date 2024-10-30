@@ -6,6 +6,8 @@ import { N05FormValidationComponent } from '../views/n05-form-validation/n05-for
 import { N06PipesComponent } from '../views/n06-pipes/n06-pipes.component';
 import { N07ModalsComponent } from '../views/n07-modals/n07-modals.component';
 import { N08ActivityComponent } from '../views/n08-activity/n08-activity.component';
+import { N09StylesComponent } from '../views/n09-styles/n09-styles.component';
+import { N10StylesSelectorComponent } from '../views/n10-styles-selector/n10-styles-selector.component';
 import { MenuItemData } from './menu';
 
 export const TheGuides: Array<MenuItemData> = [
@@ -56,5 +58,17 @@ export const TheGuides: Array<MenuItemData> = [
     text: 'Activity Indicator',
     description: 'Open Activity Indicator',
     module: N08ActivityComponent,
+  },
+  {
+    id: 'app-n09-styles',
+    text: 'Styles',
+    description: 'General styles',
+    module: N09StylesComponent,
+  },
+  {
+    id: 'app-n10-styles',
+    text: 'Style Selectors',
+    description: 'How to use selectors',
+    module: N10StylesSelectorComponent,
   },
 ];

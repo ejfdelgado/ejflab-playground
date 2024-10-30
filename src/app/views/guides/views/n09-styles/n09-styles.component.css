@@ -1,0 +1,40 @@
+.abuelo {
+    background-color: bisque;
+    height: 500px;
+}
+
+.hijo1 {
+    background-color: chartreuse;
+    height: 30px;
+}
+
+.hijo2 {
+    background-color: red;
+    flex: 1;
+}
+
+.cajon_horizontal {
+    display: flex;
+    flex-direction: row;
+}
+
+.cajon_vertical {
+    display: flex;
+    flex-direction: column;
+}
+
+.hijo_que_crece {
+    flex: 1;
+}
+
+.ancho_30 {
+    width: 30px;
+    background-color: white;
+    text-align: center;
+}
+
+.menu_izquierda {
+    width: 30px;
+    background-color: aliceblue;
+    text-align: center;
+}
