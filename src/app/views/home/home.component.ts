@@ -79,7 +79,7 @@ export class HomeComponent extends BaseComponent implements OnInit, OnDestroy {
     }
   }
 
-  override ngOnDestroy() {
-    super.ngOnDestroy();
+  override async ngOnDestroy() {
+    await super.ngOnDestroy();
   }
 }
