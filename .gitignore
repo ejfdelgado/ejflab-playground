@@ -272,3 +272,5 @@ cert/
 
 myrundev.ps1
 package-lock.json
+
+rundevlx.sh

@@ -36,6 +36,7 @@ import { MongoSrv } from "@ejfdelgado/ejflab-back/srv/MongoSrv.mjs";
 import { MinioSrv } from "@ejfdelgado/ejflab-back/srv/MinioSrv.mjs";
 import { MilvusSrv } from "@ejfdelgado/ejflab-back/srv/MilvusSrv.mjs";
 import { PostgresSrv } from "@ejfdelgado/ejflab-back/srv/PostgresSrv.mjs";
+import { PlayGroundRouter } from "./srv/PlayGroundRouter.mjs";
 
 const options = {}
 let httpSrv = http;
@@ -199,6 +200,8 @@ app.delete('/srv/:pageType/:pageId/localpage.json', [commonHeaders, checkAuthent
 app.get('/srv/:pageType/:pageId/localpage.json', [commonHeaders, checkAuthenticatedSilent, handleErrorsDecorator(MyFileServiceLocal.readFile)]);
 
 app.get('/srv/postgres/ping', [commonHeaders, handleErrorsDecorator(PostgresSrv.test)]);
+
+PlayGroundRouter.configure(app);
 
 app.use("/", handleErrorsDecorator(MainHandler.handle));// Esto solo funciona sin el npm run angular
 
